@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> S T U D E NT S </title>
+</head>
+<body>
+	<h2> All the Students: </h2>
+	<br>
+    <ul>
+        <% @students.each do |s|  %>
+            <li>
+            <%= s.first_name %> <%= s.last_name %>
+            </li>
+        <% end  %> 
+    </ul>
+
+</body>
+</html>
